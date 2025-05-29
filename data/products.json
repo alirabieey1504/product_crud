@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "name": "Laptop",
+    "description": "A fast laptop",
+    "price": 1200,
+    "stock": 10,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.5,
+    "category": "Electronics"
+  },
+  {
+    "id": "2",
+    "name": "Shoes",
+    "description": "Comfortable running shoes",
+    "price": 80,
+    "stock": 50,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4,
+    "category": "Clothing"
+  },
+  {
+    "id": "3",
+    "name": "Smartphone",
+    "description": "Latest model smartphone",
+    "price": 999.99,
+    "stock": 25,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": "4",
+    "name": "Backpack",
+    "description": "Durable backpack for travel",
+    "price": 45.5,
+    "stock": 100,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.3,
+    "category": "Accessories"
+  },
+  {
+    "id": "5",
+    "name": "Watch",
+    "description": "Stylish wristwatch",
+    "price": 150,
+    "stock": 60,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.6,
+    "category": "Accessories"
+  },
+  {
+    "id": "6",
+    "name": "Headphones",
+    "description": "Noise-cancelling headphones",
+    "price": 200,
+    "stock": 30,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.4,
+    "category": "Electronics"
+  },
+  {
+    "id": "7",
+    "name": "T-shirt",
+    "description": "Cotton t-shirt in various sizes",
+    "price": 25,
+    "stock": 200,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.1,
+    "category": "Clothing"
+  },
+  {
+    "id": "8",
+    "name": "Tablet",
+    "description": "High-performance tablet",
+    "price": 499.99,
+    "stock": 20,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4.2,
+    "category": "Electronics"
+  },
+  {
+    "id": "9",
+    "name": "Sunglasses",
+    "description": "Polarized stylish sunglasses",
+    "price": 60,
+    "stock": 80,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 4,
+    "category": "Accessories"
+  },
+  {
+    "id": "10",
+    "name": "Camera",
+    "description": "Professional DSLR camera",
+    "price": 850,
+    "stock": 15,
+    "images": [
+      "laptop.webp"
+    ],
+    "rating": 2.3,
+    "category": "Accessories"
+  },
+  {
+    "id": "11",
+    "name": "safg",
+    "description": "sdfgdfgdsfg",
+    "price": 424234,
+    "stock": 543452345,
+    "images": [],
+    "rating": 0,
+    "category": "asdfasdf"
+  },
+  {
+    "id": "12",
+    "name": "سسسس",
+    "description": "سبشسیبسشیب",
+    "price": 2545234,
+    "stock": 23453245,
+    "images": [],
+    "rating": 0,
+    "category": "شسقبشسیب"
+  },
+  {
+    "id": "13",
+    "name": "سسسس",
+    "description": "سبشسیبسشیب",
+    "price": 2545234,
+    "stock": 23453245,
+    "images": [],
+    "rating": 0,
+    "category": "شسقبشسیب"
+  },
+  {
+    "id": "14",
+    "name": "book",
+    "description": "this is book",
+    "price": 1200000,
+    "stock": 20,
+    "images": [],
+    "rating": 0,
+    "category": "book"
+  }
+]
