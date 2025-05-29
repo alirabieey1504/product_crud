@@ -1,10 +1,18 @@
 "use client";
 import { useState } from "react";
-
+type ProductType = {
+  name: string;
+  description: string;
+  price: number;
+  stock: number;
+  images: string[];
+  rating: number;
+  category: string;
+};
 export default function CreateProductForm() {
   // const [selectedFile, setSelectedFile] = useState<File | null>(null);
   // const [uploadedUrl, setUploadedUrl] = useState("");
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<ProductType>({
     name: "",
     description: "",
     price: 0,
@@ -46,19 +54,23 @@ export default function CreateProductForm() {
     }
 
     try {
-      const res = await fetch("/api/upload", {
+      const res = await fetch("http://localhost:3000/api/upload", {
         method: "POST",
         body: formData,
       });
 
       const data = await res.json();
       console.log(data, "this is data");
-      if (res.ok) {
+      if (res.ok && data.url) {
+        setForm((prev) => ({
+          ...prev,
+          images: [...prev.images, data.url],
+        }));
       } else {
         console.error("Upload failed:", data.error);
       }
     } catch (error) {
-      console.error("Error uploading file:", error);
+      console.error("Error uploading file:", error.message || error);
     }
   };
   return (

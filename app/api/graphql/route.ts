@@ -73,7 +73,7 @@ const rootValue = {
     const products = getProducts();
     return products.find((p) => p.id === id);
   },
-  products: ({ page = 1, limit = 20 }) => {
+  products: ({ page = 1, limit = 30 }) => {
     const products = getProducts();
     const start = (page - 1) * limit;
     return products.slice(start, start + limit);

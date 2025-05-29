@@ -44,7 +44,7 @@ export default async function App() {
             <Link href={`products/${item.id}`} className="" key={index}>
               <div className=" w-52 h-64 border-2 border-gray-600 rounded">
                 <Image
-                  src={`/${item.images}`}
+                  src={`/${item.images ? item.images : item.images[0]}`}
                   width={300}
                   height={420}
                   className=""

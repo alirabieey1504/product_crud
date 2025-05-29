@@ -51,7 +51,7 @@ export default async function Admin() {
             <Link href={`admin/edit/${item.id}`} className="" key={index}>
               <div className=" w-52 h-64 border-2 border-gray-600 rounded">
                 <Image
-                  src={`/${item.images}`}
+                  src={`/${item.images[0]}`}
                   width={300}
                   height={420}
                   className=""
