@@ -12,7 +12,6 @@ export const config = {
 };
 export async function POST(req: NextRequest) {
   return new Promise((resolve) => {
-    const form = new IncomingForm();
     const uploadDir = path.join(process.cwd(), "/public/uploads");
     form.uploadDir = uploadDir;
     form.keepExtensions = true;

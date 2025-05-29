@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import React from "react";
 import { useParams } from "next/navigation";
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
+// type PageProps = {
+//   params: {
+//     id: string;
+//   };
+// };
 type ProductType = {
   id: string;
   name: string;
@@ -27,11 +27,15 @@ export default function Edit() {
   const [rating, setRating] = useState(Number);
   const [category, setCategory] = useState("");
 
-  const params = useParams();
-  const id = params.id as string;
-  console.log(id);
+  const params = useParams() as Record<string, string | string[]>;
+
+  const id = (params.id as string) ?? {};
+  console.log(id, "this is id");
+
   useEffect(() => {
     async function fetchData() {
+      console.log(params, "this is params");
+
       const response = await axios.post<{ data: { product: ProductType } }>(
         "http://localhost:3000/api/graphql",
         {
